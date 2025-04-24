@@ -1,6 +1,6 @@
 package ru.ls.aqa.school.core;
 
-// обьявляется публичный класс Point, для точек и проскости
+// объявляется публичный класс Point, для точек и проскости
 public class Point {
     public float x;          //
     public float y;          // координаты
@@ -18,8 +18,8 @@ public class Point {
         return (float) Math.sqrt(dx * dx + dy * dy);   // вычисления квадратного корня.
 
     }
-    // для отображения координатов в виде (x, y)
-    public String toString1 () {
+    // для отображения координат в виде (x, y)
+    public String toString () {
         return "(" + x + ", " + y + ")";
     }
 
