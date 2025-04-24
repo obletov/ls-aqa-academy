@@ -3,8 +3,8 @@ package ru.ls.aqa.school.core;
 public class OddTask {
 
     // Метод isOdd: возвращает true, если число нечетное, иначе false
-    public static boolean isOdd (int number){
-        return number % 2 !=0;   // остаток от деления на 2 не равен нулю ⇒ число нечётное.
+    public static boolean isOdd(int number) {
+        return number % 2 != 0;   // остаток от деления на 2 не равен нулю ⇒ число нечётное.
     }
 
     // Это точка входа в программу.

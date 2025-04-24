@@ -11,6 +11,7 @@ public class Point {
         this.y = y;    // установить значение x и y для текущего обьекта
 
     }
+
     // Метод класса для вычисления расстояния до другой точки
     public float distance(Point point) {
         float dx = this.x - point.x;    // разности координат
@@ -18,8 +19,9 @@ public class Point {
         return (float) Math.sqrt(dx * dx + dy * dy);   // вычисления квадратного корня.
 
     }
+
     // для отображения координат в виде (x, y)
-    public String toString () {
+    public String toString() {
         return "(" + x + ", " + y + ")";
     }
 
