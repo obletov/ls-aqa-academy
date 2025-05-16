@@ -6,5 +6,8 @@ public class PointTask {
         Point p2 = new Point(-1, -2);
 
         System.out.println("Расстояние между " + p1 + " и " + p2 + " = " + p2.distance(p1));
+
     }
+
+
 }
