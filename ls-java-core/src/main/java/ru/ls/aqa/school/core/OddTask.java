@@ -16,5 +16,7 @@ public class OddTask {
         for (int testNumber : testNumbers) {
             System.out.println("Число " + testNumber + " нечетное? -> " + isOdd(testNumber));
         }
+
+
     }
 }
