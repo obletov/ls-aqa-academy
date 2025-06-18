@@ -1,5 +1,4 @@
 package ru.ls.aqa.school.addressbook.tests;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import ru.ls.aqa.school.addressbook.appmanager.ApplicationManager;
@@ -11,7 +10,7 @@ public class TestBase {
 
     @BeforeEach
     public void setUp() {
-        app.getGroupHelper().init();
+        app.init();
     }
 
     @AfterEach
