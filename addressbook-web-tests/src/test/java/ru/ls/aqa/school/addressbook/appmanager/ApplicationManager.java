@@ -8,15 +8,15 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class ApplicationManager {
 
+    private final static String ADDRESSBOOK_URL = "http://localhost/addressbook/";
     private final SessionHelper sessionHelper = new SessionHelper();
     private final GroupHelper groupHelper = new GroupHelper();
     private final ContactHelper contactHelper = new ContactHelper();
     private final NavigationHelper navigationHelper = new NavigationHelper();
-    private String addressbook_url = "http://localhost/addressbook/";
 
     public void init() {
         Configuration.browser = "chrome";
-        open(addressbook_url);
+        open(ADDRESSBOOK_URL);
         WebDriverRunner.getWebDriver().manage().window().setSize(new Dimension(2029, 1188));
         sessionHelper.login("admin", "secret");
     }
