@@ -16,8 +16,8 @@ public class ApplicationManager {
 
     public void init() {
         Configuration.browser = "chrome";
+        Configuration.browserSize = "2029x1188";
         open(ADDRESSBOOK_URL);
-        WebDriverRunner.getWebDriver().manage().window().setSize(new Dimension(2029, 1188));
         sessionHelper.login("admin", "secret");
     }
 
