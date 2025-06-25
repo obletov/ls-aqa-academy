@@ -13,8 +13,8 @@ public class HelperBase {
         click(By.name("username"));
     }
 
-    protected static void type(By group_name, String locator, String text) {
+    protected static void type(By groupName, By locator, By text) {
         HelperBase.click(locator);
-        $(byName(group_name)).val(text);
+        $(byName(String.valueOf(groupName))).val(String.valueOf(text));
     }
 }
