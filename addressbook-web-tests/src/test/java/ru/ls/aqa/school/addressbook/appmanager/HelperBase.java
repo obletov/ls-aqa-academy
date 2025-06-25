@@ -1,18 +1,19 @@
 package ru.ls.aqa.school.addressbook.appmanager;
 
+import org.openqa.selenium.By;
+
 import java.util.Map;
 
 import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selenide.$;
 
 public class HelperBase {
-    protected Map<String, Object> vars;
 
-    protected static void click(String locator) {
-        $(byName(locator)).click();
+    protected static void click(By locator) {
+        click(By.name("username"));
     }
 
-    protected static void type(String group_name, String locator, String text) {
+    protected static void type(By group_name, String locator, String text) {
         HelperBase.click(locator);
         $(byName(group_name)).val(text);
     }

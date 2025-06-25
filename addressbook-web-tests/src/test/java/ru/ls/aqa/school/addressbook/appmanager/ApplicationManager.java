@@ -1,4 +1,5 @@
 package ru.ls.aqa.school.addressbook.appmanager;
+
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.Dimension;
@@ -11,11 +12,11 @@ public class ApplicationManager {
     private final GroupHelper groupHelper = new GroupHelper();
     private final ContactHelper contactHelper = new ContactHelper();
     private final NavigationHelper navigationHelper = new NavigationHelper();
-    private String ADDRESSBOOK_URL = "http://localhost/addressbook/";
+    private String addressbook_url = "http://localhost/addressbook/";
 
     public void init() {
         Configuration.browser = "chrome";
-        open(ADDRESSBOOK_URL);
+        open(addressbook_url);
         WebDriverRunner.getWebDriver().manage().window().setSize(new Dimension(2029, 1188));
         sessionHelper.login("admin", "secret");
     }

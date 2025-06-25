@@ -12,7 +12,6 @@ public class SessionHelper {
         $(byName("pass")).val(password);
         $("input:nth-child(7)").click();
     }
-
     public static void logout() {
         $(byLinkText("Logout")).click();
     }

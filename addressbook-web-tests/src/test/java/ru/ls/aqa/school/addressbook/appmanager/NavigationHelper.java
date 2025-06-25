@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class NavigationHelper {
     protected Map<String, Object> vars;
 
-    public static void gotoGroupPage() {
+    public void goToGroupPage() {
         $(byLinkText("groups")).click();
     }
 }

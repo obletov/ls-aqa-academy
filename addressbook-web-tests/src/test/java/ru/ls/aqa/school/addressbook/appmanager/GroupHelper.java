@@ -3,7 +3,7 @@ package ru.ls.aqa.school.addressbook.appmanager;
 public class GroupHelper extends HelperBase {
 
     public void submitGriupCreation() {
-        click("submit");
+        click(B"submit");
     }
 
     public void fillGroupForm(String name, String header, String footer) {
