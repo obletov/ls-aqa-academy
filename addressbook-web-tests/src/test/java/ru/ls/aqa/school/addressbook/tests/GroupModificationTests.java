@@ -1,15 +1,17 @@
 package ru.ls.aqa.school.addressbook.tests;
 import org.junit.jupiter.api.Test;
 import ru.ls.aqa.school.addressbook.appmanager.NavigationHelper;
+import ru.ls.aqa.school.addressbook.model.GroupData;
+
 public class GroupModificationTests extends TestBase {
 
     @Test
     public void testGroupModification() {
-        app.getNavigationHelper().gotoGroupPage();
+        app.getNavigationHelper().goToGroupPage();
         app.getGroupHelper().selectGroup();
         app.getGroupHelper().initGroupModification();
-        app.getGroupHelper().fillGroupForm("test111", "test222", "test333");
+        app.getGroupHelper().fillGroupForm(new GroupData("1","2","3"));
         app.getGroupHelper().submitGroupModification();
-        app.getNavigationHelper().gotoGroupPage();
+        app.getNavigationHelper().goToGroupPage();
     }
 }

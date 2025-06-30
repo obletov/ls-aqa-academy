@@ -15,8 +15,8 @@ public class ApplicationManager {
     private final NavigationHelper navigationHelper = new NavigationHelper();
 
     public void init() {
-        Configuration.browser = "chrome";
-        Configuration.browserSize = "2029x1188";
+        Configuration.browser = System.getProperty("selenide.browser", "chrome");
+        // "chrome", "firefox", "legacy_firefox", "ie", "htmlunit", "opera", "safari", "edge"
         open(ADDRESSBOOK_URL);
         sessionHelper.login("admin", "secret");
     }

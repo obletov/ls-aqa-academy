@@ -2,14 +2,18 @@ package ru.ls.aqa.school.addressbook.appmanager;
 import org.openqa.selenium.By;
 import ru.ls.aqa.school.addressbook.model.GroupData;
 
+import static com.codeborne.selenide.Selectors.byName;
+import static com.codeborne.selenide.Selenide.$;
+
 public class GroupHelper extends HelperBase {
 
-    public void submitGriupCreation() {
-        click(click(By.name("submit");
+    public void submitGroupCreation() {
+
+        click(By.name("submit"));
     }
 
-    public void fillGroupForm(String name, String header, String footer) {
-        type(By.name("group_name"), GroupData.getName());
+    public static void fillGroupForm(GroupData groupData) {
+        type(byName("group_name"), GroupData.getName());
         type(By.name("group_header"), GroupData.getHeader());
         type(By.name("group_footer"), GroupData.getFooter());
     }

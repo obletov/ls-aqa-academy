@@ -5,6 +5,7 @@ import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selenide.$;
 
 public class SessionHelper {
+
     public void login(String username, String password) {
         $(byName("user")).click();
         $(byName("user")).val(username);
