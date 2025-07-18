@@ -8,9 +8,9 @@ import static com.codeborne.selenide.Selectors.byName;
 public class ContactHelper extends HelperBase {
 
     public void fillContactForm(ContactData groupData) {
-        type(By.name("firstname"), ContactData.getFirstName());
-        type(By.name("lastname"), ContactData.getLastName());
-        type(By.name("home"), ContactData.getHome());
+        type(By.name("firstname"), groupData.getFirstName());
+        type(By.name("lastname"), groupData.getLastName());
+        type(By.name("home"), groupData.getHome());
 }
 }
 

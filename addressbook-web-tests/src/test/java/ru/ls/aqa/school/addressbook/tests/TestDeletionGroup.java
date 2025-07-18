@@ -7,14 +7,14 @@ public class TestDeletionGroup extends TestBase {
 
     @BeforeEach
     public void init() {
-        app.getNavigationHelper().gotoGroupPage();
+        app.getNavigationHelper().goToGroupPage();
     }
 
     @Test
     public void DeletionGroup() {
         app.getGroupHelper().selectGroup();
         app.getGroupHelper().clickDeleteButton();
-        app.getNavigationHelper().gotoGroupPage();
+        app.getNavigationHelper().goToGroupPage();
     }
 
 }

@@ -7,12 +7,12 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class HelperBase {
 
-    protected static void click(By locator) {
+    protected void click(By locator) {
         $(locator).click();
 
     }
 
-    protected static void type(By locator, String text) {
+    protected void type(By locator, String text) {
         $(locator).val(text);
     }
 }

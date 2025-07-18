@@ -6,7 +6,7 @@ import ru.ls.aqa.school.addressbook.model.GroupData;
 public class CreateGroupTest extends TestBase {
 
     @Test
-    public void testcreateGroup() {
+    public void testCreateGroup() {
         app.getNavigationHelper().goToGroupPage();
         app.getGroupHelper().clickCreateGroup();
         app.getGroupHelper().fillGroupForm(new GroupData("name", "footer","header"));
