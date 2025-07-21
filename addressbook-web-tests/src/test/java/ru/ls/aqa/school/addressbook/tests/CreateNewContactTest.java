@@ -16,12 +16,10 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class CreateNewContactTest {
-    private Map<String, Object> vars;
 
     @BeforeEach
     public void setUp() {
         Configuration.browser = "chrome";
-        vars = new HashMap<>();
     }
 
     @AfterEach

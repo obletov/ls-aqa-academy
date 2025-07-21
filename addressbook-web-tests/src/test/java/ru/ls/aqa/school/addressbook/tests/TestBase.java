@@ -13,7 +13,4 @@ public class TestBase {
         app.init();
     }
 
-    @AfterEach
-    public void tearDown() {
-    }
 }
