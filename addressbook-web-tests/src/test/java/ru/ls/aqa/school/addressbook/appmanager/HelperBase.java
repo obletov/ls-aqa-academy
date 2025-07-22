@@ -2,7 +2,6 @@ package ru.ls.aqa.school.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selenide.$;
 
 public class HelperBase {

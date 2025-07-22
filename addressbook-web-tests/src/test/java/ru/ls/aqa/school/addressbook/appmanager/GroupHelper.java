@@ -1,9 +1,7 @@
 package ru.ls.aqa.school.addressbook.appmanager;
+
 import org.openqa.selenium.By;
 import ru.ls.aqa.school.addressbook.model.GroupData;
-
-import static com.codeborne.selenide.Selectors.byName;
-import static com.codeborne.selenide.Selenide.$;
 
 public class GroupHelper extends HelperBase {
 
@@ -19,6 +17,7 @@ public class GroupHelper extends HelperBase {
     }
 
     public void clickCreateGroup() {
+
         click(By.name("new"));
     }
 

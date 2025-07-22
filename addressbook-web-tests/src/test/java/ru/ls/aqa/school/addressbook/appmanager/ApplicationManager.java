@@ -1,8 +1,6 @@
 package ru.ls.aqa.school.addressbook.appmanager;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.WebDriverRunner;
-import org.openqa.selenium.Dimension;
 
 import static com.codeborne.selenide.Selenide.open;
 
