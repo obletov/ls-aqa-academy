@@ -11,7 +11,7 @@ public class OddTask {
     public static void main(String[] args) {
         System.out.println("Тестирование метода isOdd():");   // Сообщение
 
-        int[] testNumbers = { 0, 1, 2, 3, 10, -1, -4, 99, 120, -223 };
+        int[] testNumbers = {0, 1, 2, 3, 10, -1, -4, 99, 120, -223};
 
         for (int testNumber : testNumbers) {
             System.out.println("Число " + testNumber + " нечетное? -> " + isOdd(testNumber));
