@@ -6,7 +6,6 @@ import ru.ls.aqa.school.addressbook.model.GroupData;
 public class GroupHelper extends HelperBase {
 
     public void submitGroupCreation() {
-
         click(By.name("submit"));
     }
 
@@ -17,7 +16,6 @@ public class GroupHelper extends HelperBase {
     }
 
     public void clickCreateGroup() {
-
         click(By.name("new"));
     }
 

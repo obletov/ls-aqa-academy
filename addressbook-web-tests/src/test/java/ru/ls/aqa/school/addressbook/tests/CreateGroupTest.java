@@ -6,13 +6,14 @@ import ru.ls.aqa.school.addressbook.model.GroupData;
 
 public class CreateGroupTest extends TestBase {
 
+    private final GroupData groupData = new GroupData("name", "footer", "header");
+
     @Test
     public void testCreateGroup() {
         app.getNavigationHelper().goToGroupPage();
         app.getGroupHelper().clickCreateGroup();
-        app.getGroupHelper().fillGroupForm(new GroupData("name", "footer", "header"));
+        app.getGroupHelper().fillGroupForm(groupData);
         app.getGroupHelper().submitGroupCreation();
         app.getNavigationHelper().goToGroupPage();
-        SessionHelper.logout();
     }
 }

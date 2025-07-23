@@ -15,11 +15,7 @@ public class SessionHelper extends HelperBase {
         click(cssSelector("input:nth-child(7)"));
     }
 
-    public static void logout() {
-        $(byLinkText("Logout")).click();
+    public void logout() {
+        click(byLinkText("Logout"));
     }
 }
-
-
-
-

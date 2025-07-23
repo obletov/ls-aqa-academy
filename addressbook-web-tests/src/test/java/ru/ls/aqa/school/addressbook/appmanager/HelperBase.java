@@ -6,12 +6,11 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class HelperBase {
 
-    protected void click(By locator) {
+    protected static void click(By locator) {
         $(locator).click();
-
     }
 
-    protected void type(By locator, String text) {
+    protected static void type(By locator, String text) {
         $(locator).val(text);
     }
 }

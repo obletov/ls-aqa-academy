@@ -1,22 +1,19 @@
 package ru.ls.aqa.school.addressbook.appmanager;
 
 import static com.codeborne.selenide.Selectors.byLinkText;
-import static com.codeborne.selenide.Selenide.$;
+import static ru.ls.aqa.school.addressbook.appmanager.HelperBase.click;
 
 public class NavigationHelper {
 
     public void goToGroupPage() {
-
-        $(byLinkText("groups")).click();
+        click(byLinkText("groups"));
     }
 
     public void goToContactPage() {
-
-        $(byLinkText("home")).click();
+        click(byLinkText("home"));
     }
 
     public void clickCreateContact() {
-
-        $(byLinkText("add new")).click();
+        click(byLinkText("add new"));
     }
 }

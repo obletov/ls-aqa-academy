@@ -7,11 +7,9 @@ import lombok.*;
 @With
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class ContactData {
     private String firstName;
     private String lastName;
     private String home;
     private String mailContact;
-
 }

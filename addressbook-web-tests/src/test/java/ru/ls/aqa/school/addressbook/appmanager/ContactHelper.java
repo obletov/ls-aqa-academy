@@ -12,9 +12,6 @@ public class ContactHelper extends HelperBase {
     }
 
     public void submitContactCreation() {
-
         click(By.name("submit"));
     }
 }
-
-

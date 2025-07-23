@@ -1,9 +1,11 @@
 package ru.ls.aqa.school.addressbook.appmanager;
 
 import com.codeborne.selenide.Configuration;
+import lombok.Getter;
 
 import static com.codeborne.selenide.Selenide.open;
 
+@Getter
 public class ApplicationManager {
 
     private final static String ADDRESSBOOK_URL = "http://localhost/addressbook/";
@@ -18,21 +20,4 @@ public class ApplicationManager {
         open(ADDRESSBOOK_URL);
         sessionHelper.login("admin", "secret");
     }
-
-    public GroupHelper getGroupHelper() {
-        return groupHelper;
-    }
-
-    public NavigationHelper getNavigationHelper() {
-        return navigationHelper;
-    }
-
-    public SessionHelper getSessionHelper() {
-        return sessionHelper;
-    }
-
-    public ContactHelper getContactHelper() {
-        return contactHelper;
-    }
 }
-
